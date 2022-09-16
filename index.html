@@ -7,27 +7,37 @@
     <title>Olistic</title>
     <!-- Favicon -->
     <link rel="icon" href="../imagenes/Diseño sin título.png" type="image/gif" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="./fontawesome-free-6.1.2-web/" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head> 
 
 <body>  
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="icon-menu"></i>
+    <header id="header"> 
+        <nav>
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                <div class="nav-title"> <a href="../index.html" class="enlace">
+                    <img src="../imagenes/logo.svg" alt="logo">
+                </a>
+                </div>
+                </div>
+                <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </label>
-        <a href="./index.html" class="enlace">
-            <img src="./imagenes/logo.svg" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a class="activo" href="./index.html">Inicio</a></li>
-            <li><a href="./pages/sobrenosotros.html">Sobre mi</a></li>
-            <li><a href="./pages/terapias.html">Terapias</a></li>
-            <li><a href="./pages/galeria.html">Galeria</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>  
+                </div>
+                <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./pages/sobrenosotros.html">Sobre mi</a>
+                <a href="./pages/terapias.html">Terapias</a>
+                <a href="./pages/galeria.html">Galeria</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav> 
+    </header>
     <main>
         <section class="section-index">
             <div class="contenedor1">
@@ -40,7 +50,7 @@
         </section>
         <section class="section-index">
             <div class="contenedor1">
-                <img src="./imagenes/img1.jpg" class="img-index" alt="">
+                <img src="./imagenes/girl-1457006.png" class="img-index" alt="">
             </div>
             <div>
                 <h2>Lorem ipsum dolor sit amet.</h2>

@@ -4,74 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Olistic</title>
     <!-- Favicon -->
     <link rel="icon" href="../imagenes/Diseño sin título.png" type="image/gif" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head> 
 <body>  
-    <header id="header">    
+    <header id="header"> 
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="icon-menu"></i>
-                    </label>
-            <a href="../index.html" class="enlace">
-                <img src="../imagenes/logo.svg" alt="" class="logo">
-            </a>
-            <ul>
-                <li><a class="activo" href="../index.html">Inicio</a></li>
-                <li><a href="./sobrenosotros.html">Sobre mi</a></li>
-                <li><a href="./terapias.html">Terapias</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>  
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                <div class="nav-title"> <a href="../index.html" class="enlace">
+                    <img src="../imagenes/logo.svg" alt="logo">
+                </a>
+                </div>
+                </div>
+                <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                </div>
+                <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./sobrenosotros.html">Sobre mi</a>
+                <a href="./terapias.html">Terapias</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav> 
     </header>
 
     <main>
-        <section class="section-index">
-        <div class="contenedor1">
-            <img src="../imagenes/tre.jpeg" alt="">
-        </div>
-        <div class="contenedor-texto">
-            <h2>Terapía de respuesta espiritual</h2>
-            <p>La Terapia de Respuesta Espiritual, surgida en la década de los 90, es una técnica de sanación que limpia desde la raíz de nuestro ser, bloqueos y programaciones negativas trabajando directamente con nuestra alma.</p>
-            <span class="saber-mas"><a href="./tre.html">Saber mas</a></span>
-        </div>
-        </section>
+        <section class="contenedor-terapias">
+                <div class="terapia">
+                    <img src="../imagenes/tre.jpeg" alt="">
+                    <div class="contenedor-texto">
+                        <h2>Terapía de respuesta espiritual</h2>
+                        <p>La Terapia de Respuesta Espiritual, surgida en la década de los 90, es una técnica de sanación que limpia desde la raíz de nuestro ser, bloqueos y programaciones negativas trabajando directamente con nuestra alma.</p>
+                        <a class="button" href="./tre.html">Leer mas</a>
+                    </div>
+                </div>
 
-        <section class="section-index">
-            <div class="contenedor1">
-                <img src="../imagenes/biodeco.jpg" alt="">
-            </div>
-            <div class="contenedor-texto">
-                <h2>Biodescodificacion</h2>
-                <p>La Biodescodificación es una propuesta de la medicina alternativa que intenta encontrar el origen metafísico de las enfermedades, o su significado emocional, para buscar a partir de allí la forma de sanar. </p>
-                <span class="saber-mas"><a href="./biodeco.html">Saber mas</a></span>
-            </div>
-        </section>
+                <div class="terapia">
+                    <img src="../imagenes/utero.jpeg" alt="">
+                    <div class="contenedor-texto">
+                        <h2>sanación de utero</h2>
+                        <p>El Ritual de Útero es una simple y profunda meditación que nos guía para que podamos sanar las memorias ancestrales y recuerdos inconscientes de dolor, sufrimiento y sometimiento que alojamos en ese órgano. Para muchas mujeres, esta carga es la causante de miedos y limitaciones.</p>
+                        <a class="button" href="./utero.html">Leer mas</a>
+                    </div>
+                </div>
 
-        <section class="section-index">
-        <div class="contenedor1">
-            <img src="../imagenes/tarot.jpg" alt="">
-        </div>
-        <div class="contenedor-texto">
-            <h2>Tarot</h2>
-            <p>El tarot desde una mirada evolutiva nos trae respuestas en esos momentos en los que nos sentimos contfundidxs. Nos brinda claridad y orden en esa nube mental llena de ruido y pensamientos que no logramos integrar y que muchas veces nos desconecta de todo lo que nos rodea y hasta de nosotrxs mismxs. Es ese famoso "consejo amigo" que muchas veces necesitamos recibir para finalmente salir disparados como un cohete sin reserva hacia el infinito y más allá. La dinámica con la que trabajo esta herramienta es súper sencilla para que todxs puedan acceder a ella y avanzar con seguridad hacia todo aquello que verdaderamente desean para su vida. </p>
-            <span class="saber-mas"><a href="./tarot.html">Saber mas</a></span>
-        </div>
-    </section>
+                <div class="terapia">
+                    <img src="../imagenes/biodeco.jpg" alt="">
+                    <div class="contenedor-texto">
+                        <h2>Biodescodificacion</h2>
+                        <p>La Biodescodificación es una propuesta de la medicina alternativa que intenta encontrar el origen metafísico de las enfermedades, o su significado emocional, para buscar a partir de allí la forma de sanar.</p>
+                        <a class="button" href="./bioddeco.html">Leer mas</a>
+                    </div>
+                </div>
 
-    <section class="section-index">
-        <div class="contenedor1">
-            <img src="../imagenes/registros-akashicos.jpg" alt="">
-        </div>
-        <div class="contenedor-texto">
-            <h2>Registros Akashicos</h2>
-            <p>"Akáshico" viene de ākāśa (akasha), término del antiguo idioma sánscrito de la India y significa alma, espacio, cielo o éter. Según la tradición hindú, los registros akáshicos son los archivos de las memorias del alma.</p>
-            <span class="saber-mas"><a href="./registros.html">Saber mas</a></span>
-        </div>
+                <div class="terapia">
+                    <img src="../imagenes/tarot.jpg" alt="">
+                    <div class="contenedor-texto">
+                        <h2>Tarot</h2>
+                        <p>El tarot desde una mirada evolutiva nos trae respuestas en esos momentos en los que nos sentimos contfundidxs. Nos brinda claridad y orden en esa nube mental llena de ruido y pensamientos que no logramos integrar y que muchas veces nos desconecta de todo lo que nos rodea y hasta de nosotrxs mismxs. Es ese famoso "consejo amigo" que muchas veces necesitamos recibir para finalmente salir disparados como un cohete sin reserva hacia el infinito y más allá. La dinámica con la que trabajo esta herramienta es súper sencilla para que todxs puedan acceder a ella y avanzar con seguridad hacia todo aquello que verdaderamente desean para su vida.</p>
+                        <a class="button" href="./tarot.html">Leer mas</a>
+                    </div>
+                </div>
+
+                <div class="terapia">
+                    <img src="../imagenes/registros-akashicos.jpg" alt="">
+                    <div class="contenedor-texto">
+                        <h2>Registros Akashicos</h2>
+                        <p>Akáshico" viene de ākāśa (akasha), término del antiguo idioma sánscrito de la India y significa alma, espacio, cielo o éter. Según la tradición hindú, los registros akáshicos son los archivos de las memorias del alma.</p>
+                        <a class="button" href="./registros.html">Leer mas</a>
+                    </div>
+                </div>
     </section>
     </main>
 
@@ -87,6 +100,6 @@
         <div class="footer-bottom">
             <p>Copyright &copy; 2022 by <span>Alfredo Spilere</span></p>
         </div>
-</footer>
+    </footer>
 </body>
 </html>

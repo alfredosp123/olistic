@@ -5,37 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olistic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="../imagenes/Diseño sin título.png" type="image/gif" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head> 
 <body class="fondocontacto">  
-    <header id="header">    
+    <header id="header"> 
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="icon-menu"></i>
-                    </label>
-            <a href="../index.html" class="enlace">
-                <img src="../imagenes/logo.svg" alt="" class="logo">
-            </a>
-            <ul>
-                <li><a class="activo" href="../index.html">Inicio</a></li>
-                <li><a href=".sobrenosotros.html">Sobre mi</a></li>
-                <li><a href="./terapias.html">Terapias</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>  
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                <div class="nav-title"> <a href="../index.html" class="enlace">
+                    <img src="../imagenes/logo.svg" alt="logo">
+                </a>
+                </div>
+                </div>
+                <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                </div>
+                <div class="nav-links">
+                <a href="../index.html">Inicio</a>
+                <a href="./sobrenosotros.html">Sobre mi</a>
+                <a href="./terapias.html">Terapias</a>
+                <a href="./galeria.html">Galeria</a>
+                <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav> 
     </header>
-<body>
     <div class="formulario-content">
         <form action="">
-            <h2 class="h2">CONTACTO</h2>
+            <h2 class="h2">Dejame tu consulta</h2>
             <input class="formulario" type="text" name="nombre" placeholder="Nombre">
             <input class="formulario" type="email" name="correo" placeholder="Correo">
             <input class="formulario" type="tel" name="telefono" placeholder="Numero de telefono">
-            <textarea class="formulario" name="mensaje" placeholder="Escriba aqui su mensaje" id="" cols="30" rows="10"></textarea>
+            <textarea class="formulario" name="mensaje" placeholder="Deje aqui su mensaje" id="" cols="30" rows="10"></textarea>
             <input type="button" value="ENVIAR" class="button">
         </form>
     </div>

@@ -9,6 +9,9 @@
     <!-- Favicon -->
     <link rel="icon" href="../imagenes/Diseño sin título.png" type="image/gif" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head> 
 <body>  
     <header id="header"> 
@@ -17,7 +20,7 @@
                 <input type="checkbox" id="nav-check">
                 <div class="nav-header">
                 <div class="nav-title"> <a href="../index.html" class="enlace">
-                    <img src="../imagenes/logo.svg" alt="logo">
+                    <img class="animate__animated animate__backInDown animate__delay-2s" src="../imagenes/logo.svg" alt="logo">
                 </a>
                 </div>
                 </div>
@@ -38,55 +41,91 @@
             </div>
         </nav> 
     </header>
-
     <main>
-        <section class="contenedor-terapias">
-                <div class="terapia">
-                    <img src="../imagenes/tre.jpeg" alt="">
-                    <div class="contenedor-texto">
-                        <h2>Terapía de respuesta espiritual</h2>
-                        <p>La Terapia de Respuesta Espiritual, surgida en la década de los 90, es una técnica de sanación que limpia desde la raíz de nuestro ser, bloqueos y programaciones negativas trabajando directamente con nuestra alma.</p>
-                        <a class="button" href="./tre.html">Leer mas</a>
+        <!-- Cards -->
+        <div id="cards_landscape_wrap-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 animate__animated animate__backInDown animate__delay-1s">
+                        <a href="./tre.html">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="../imagenes/tre.jpeg" alt="tre" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6 class="card-title">Terapía de respuesta espiritual</h6>
+                                        <p>La Terapia de Respuesta Espiritual, surgida en la década de los 90, es una técnica de sanación que limpia desde la raíz de nuestro ser, bloqueos y programaciones negativas trabajando directamente con nuestra alma.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 animate__animated animate__backInDown animate__delay-1s">
+                        <a href="./utero.html">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="../imagenes/utero.jpeg" alt="utero" />
+                                    </div>
+                                    <div class="text-container">                                    
+                                        <h6>Sanación de utero</h6>
+                                        <p>El Ritual de Útero es una simple y profunda meditación que nos guía para que podamos sanar las memorias ancestrales y recuerdos inconscientes de dolor, sufrimiento y sometimiento que alojamos en ese órgano. Para muchas mujeres, esta carga es la causante de miedos y limitaciones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 animate__animated animate__backInDown animate__delay-1s">
+                        <a href="./biodeco.html">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="../imagenes/biodeco.jpg" alt="Biodescodificacion" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6 class="card-title">Biodescodificacion</h6>
+                                        <p>La Biodescodificación es una propuesta de la medicina alternativa que intenta encontrar el origen metafísico de las enfermedades, o su significado emocional, para buscar a partir de allí la forma de sanar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 animate__animated animate__backInDown animate__delay-1s">
+                        <a href="./tarot.html">
+                            <div class="card-flyer">
+                                <div class="text-box">
+                                    <div class="image-box">
+                                        <img src="../imagenes/tarot.jpg" alt="tarot" />
+                                    </div>
+                                    <div class="text-container">
+                                        <h6>Tarot</h6>
+                                        <p>El tarot desde una mirada evolutiva nos trae respuestas en esos momentos en los que nos sentimos contfundidxs. Nos brinda claridad y orden en esa nube mental llena de ruido y pensamientos que no logramos integrar y que muchas veces nos desconecta de todo lo que nos rodea y hasta de nosotrxs mismxs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <div class="terapia">
-                    <img src="../imagenes/utero.jpeg" alt="">
-                    <div class="contenedor-texto">
-                        <h2>sanación de utero</h2>
-                        <p>El Ritual de Útero es una simple y profunda meditación que nos guía para que podamos sanar las memorias ancestrales y recuerdos inconscientes de dolor, sufrimiento y sometimiento que alojamos en ese órgano. Para muchas mujeres, esta carga es la causante de miedos y limitaciones.</p>
-                        <a class="button" href="./utero.html">Leer mas</a>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 animate__animated animate__backInDown animate__delay-1s">
+                <a href="./registros.html">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="../imagenes/registros-akashicos.jpg" alt="registros" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Registros Akashicos</h6>
+                                <p>Akáshico" viene de ākāśa (akasha), término del antiguo idioma sánscrito de la India y significa alma, espacio, cielo o éter. Según la tradición hindú, los registros akáshicos son los archivos de las memorias del alma.</p>
+                            </div>
+                        </div>
                     </div>
+                </a>
                 </div>
-
-                <div class="terapia">
-                    <img src="../imagenes/biodeco.jpg" alt="">
-                    <div class="contenedor-texto">
-                        <h2>Biodescodificacion</h2>
-                        <p>La Biodescodificación es una propuesta de la medicina alternativa que intenta encontrar el origen metafísico de las enfermedades, o su significado emocional, para buscar a partir de allí la forma de sanar.</p>
-                        <a class="button" href="./bioddeco.html">Leer mas</a>
-                    </div>
-                </div>
-
-                <div class="terapia">
-                    <img src="../imagenes/tarot.jpg" alt="">
-                    <div class="contenedor-texto">
-                        <h2>Tarot</h2>
-                        <p>El tarot desde una mirada evolutiva nos trae respuestas en esos momentos en los que nos sentimos contfundidxs. Nos brinda claridad y orden en esa nube mental llena de ruido y pensamientos que no logramos integrar y que muchas veces nos desconecta de todo lo que nos rodea y hasta de nosotrxs mismxs. Es ese famoso "consejo amigo" que muchas veces necesitamos recibir para finalmente salir disparados como un cohete sin reserva hacia el infinito y más allá. La dinámica con la que trabajo esta herramienta es súper sencilla para que todxs puedan acceder a ella y avanzar con seguridad hacia todo aquello que verdaderamente desean para su vida.</p>
-                        <a class="button" href="./tarot.html">Leer mas</a>
-                    </div>
-                </div>
-
-                <div class="terapia">
-                    <img src="../imagenes/registros-akashicos.jpg" alt="">
-                    <div class="contenedor-texto">
-                        <h2>Registros Akashicos</h2>
-                        <p>Akáshico" viene de ākāśa (akasha), término del antiguo idioma sánscrito de la India y significa alma, espacio, cielo o éter. Según la tradición hindú, los registros akáshicos son los archivos de las memorias del alma.</p>
-                        <a class="button" href="./registros.html">Leer mas</a>
-                    </div>
-                </div>
-    </section>
+            </div>
+        </div>
     </main>
+
 
     <footer>    
         <div class="contenido-footer">
@@ -97,9 +136,9 @@
                         <li><a href="https://api.whatsapp.com/send/?phone=3772623437&text&type=phone_number&app_absent=0"> <img src="../icon/whatsapp.svg" class="iconosfooter" alt=""></li>
                 </ul>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy; 2022 by <span>Alfredo Spilere</span></p>
-        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="../imagenes/Diseño sin título.png" type="image/gif" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head> 
 <body>  
     <header id="header"> 
@@ -16,7 +19,7 @@
                 <input type="checkbox" id="nav-check">
                 <div class="nav-header">
                 <div class="nav-title"> <a href="../index.html" class="enlace">
-                    <img src="../imagenes/logo.svg" alt="logo">
+                    <img class="animate__animated animate__backInDown animate__delay-2s" src="../imagenes/logo.svg" alt="logo">
                 </a>
                 </div>
                 </div>
@@ -37,39 +40,46 @@
             </div>
         </nav> 
     </header>
-    <div class="galeria">
-        <h1> Galeria</h1>
-        <div class="linea"></div>
-        <div class="contenedor-imagenes">
-            <div class="imagen">
-                <img src="../imagenes/img1.jpg" alt="">
+    <main>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+                />
+            <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+                />
             </div>
-            <div class="imagen">
-                <img src="../imagenes/img2.jpg" alt="">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+                /> 
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+                />
             </div>
-            <div class="imagen">
-                <img src="../imagenes/img3.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img4.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img5.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img6.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img7.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img8.jpg" alt="">
-            </div>
-            <div class="imagen">
-                <img src="../imagenes/img9.jpg" alt="">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+                />
+                <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+                />
             </div>
         </div>
-    </div>
+    </main>
 
         <footer>    
         <div class="contenido-footer">
@@ -79,9 +89,6 @@
                         <li><a href="https://www.instagram.com/pardo_efe"><img src="../icon/instagram.svg" class="iconosfooter" alt=""></li>
                         <li><a href="https://api.whatsapp.com/send/?phone=3772623437&text&type=phone_number&app_absent=0"> <img src="../icon/whatsapp.svg" class="iconosfooter" alt=""></li>
                 </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy; 2022 by <span>Alfredo Spilere</span></p>
         </div>
 </footer>
     

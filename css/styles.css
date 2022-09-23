@@ -10,7 +10,7 @@
 
 
 body {
-    background: #E9C46A;
+    background: #E9C46A !important;
     flex-direction: column;
     justify-content: center;
     height: 100%;
@@ -24,24 +24,14 @@ main {
 
 .enlace {
     position: relative;
-    top: 10px;
 }
 
 footer{
     z-index: 999;
-    background: #E76F51;
-    height: auto;
+    height: 210px;
+    background: rgb(0 172 193);
     width: 100%;
-    padding-top: 40px;
     color: #fff;
-}
-
-.contenido-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 .contenido-footer h3 {
@@ -57,7 +47,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    padding: 15px;
 }
 
 .redes li {
@@ -72,7 +62,7 @@ footer{
 
 .footer-bottom{
     box-sizing: border-box;
-    background:#E76F51;
+    background: rgb(0 172 193);
     width: 100%;
     padding: 2px 0;
     text-align: center;
@@ -83,42 +73,11 @@ footer{
     text-transform: capitalize;
 }
 
-.galeria h1 {
-    font-size: 50px;
-    font-family: "Open Sans";
-    text-align: center;
-    margin: 15px 0 15px;
-    font-weight: 800;
-}
 
-.contenedor-imagenes {
-    display: flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 3px;
-}
-
-.contenedor-imagenes .imagen {
-    width: 32%;
-    position: relative;
-    height: 400px;
-    margin-bottom: 5px;
-    box-shadow: #9E2A0D;
-    border: solid 3px rgb(80, 41, 37);
-    border-radius: 8px;
-}
-
-.imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .contenido-footer {
     text-align: center;
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 
@@ -129,52 +88,17 @@ footer{
     margin: 15px;
 }
 
-.contenedor-terapias {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
-
-
-.terapia {
-    line-height: 1;
-    width: 85%;
-    height: 100%;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedor-terapias .terapia:hover {
-    background: #42424270;
-}
-
-
-.terapia img {
-    position: relative;
-    border: solid #030303 2px;
-    border-radius: 50px;
-    width: 280px;
-    height: 200px;
-    float: left;
-}
-
-.contenedor-texto {
-    display: inline;
-    text-align: justify;
-    width: 100%;
-    padding: 1px;
-}
 
 .contenedor-texto a {
     margin-top: 15px;
 
+}
+.contenedor-texto h1{
+    font-size: 52px;
+    margin-bottom: 5px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: #264653;
 }
 
 .contenedor-texto h2 {
@@ -183,6 +107,17 @@ footer{
     text-align: center;
     text-transform: uppercase;
     color: #264653;
+}
+
+.contenedor-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.contenedor-texto p{
+    text-align: center;
 }
 
 .contenedor1 img {
@@ -206,9 +141,9 @@ footer{
 }
 
 form{
-    width: 250px;
+    width: 280px;
     margin: auto;
-    background: #e76f5194;
+    background: rgba(0, 171, 193, 0.205);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 45px;
@@ -216,8 +151,7 @@ form{
 }
 
 .h2 {
-    color: #2A9D8F;
-    background: #E76F51;
+    color: #00acc1;
     text-transform: capitalize;
     text-align: center;
     box-sizing: border-box;
@@ -250,17 +184,18 @@ textarea {
 }
 
 .contenedor-sobremi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 50px;
     position: relative;
     display: flex;
     box-sizing: border-box;
 }
 
-.contenedor-sobremi p {
-    box-sizing: border-box;
+.texto-imagen p {
     width: 100%;
     height: 100%;
-    display: flex;
     text-align: center;
     padding: 10px;
     margin: 2px;
@@ -279,8 +214,8 @@ textarea {
 }
 
 .texto-imagen {
+    margin: 5px;
     border: solid 2px;
-    box-shadow: #4fda18;
     border-radius: 8px;
 }
 
@@ -295,7 +230,7 @@ textarea {
         position: relative;
         line-height: 20px;
         border: 1px solid transparent;
-        border-bottom-color: #2A9D8F;
+        border-bottom-color: #00acc1;
         padding: 5px;
         margin-top: 10px;
         outline: none;
@@ -305,7 +240,7 @@ textarea {
 
 .formulario:focus, input:hover {
         outline: none;
-        padding: .2rem 1rem;
+        padding: 10px 10px;
         border-radius: 1rem;
         border-color: #7a9cc6;
     }
@@ -331,14 +266,14 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: auto;
     width: 100%;
-    background-color: #A98467;
+    background-color: rgb(0 172 193);
     position: relative;
     }
 .nav .nav-header {
     position: relative;
-    bottom: 6px;
+    bottom: 35%;
     }
 
 .nav .nav-header .nav-title {
@@ -355,14 +290,14 @@ textarea {
 .nav .nav-links {
     display: inline;
     float: right;
-    font-size: 18px;
+    text-transform: uppercase;
     }
 
 .nav .nav-links a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: #f7f3e3;
 }
 
 .nav .nav-links a:hover {
@@ -374,6 +309,88 @@ textarea {
 display: none;
     }
 
+#cards_landscape_wrap-2{
+    text-align: center;;
+}
+    #cards_landscape_wrap-2 .container{
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+    #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+    }
+#cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+    }
+#cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    }
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    height: 200px;
+    }
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+    }
+#cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+    }
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 30px 18px;
+    }
+#cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+    }
+#cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+    }
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    }
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+    }
+
+/* Media  */
 @media (max-width:600px) {
 .nav .nav-btn {
     display: inline-block;
@@ -394,13 +411,13 @@ display: none;
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #000;
     }
     .nav .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #A98467;
+    background-color: rgb(0 172 193);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -408,7 +425,9 @@ display: none;
     left: 0px;
     }
 .nav .nav-links a {
-    display: block;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
     width: 100%;
     }
 .nav #nav-check:not(:checked) ~ .nav-links {
